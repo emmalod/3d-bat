@@ -29,7 +29,7 @@
     "magic": "nodemon --watch public/scripts -e js -x \"npm run bundlejs\"",
     "html:watch": "nodemon --ignore node_modules --ignore public --watch src -e html,css -x \"npm run html:copy && npm run css:copy\"",
     "build": "webpack --config ./webpack.config.js --mode production",
-    "start": "webpack serve --inline --open chromium-browser",
+    "start": "webpack serve --inline --open chrome",
     "start-server": "python3 -m src.server.app",
     "copy-files": "copyfiles -u 1 src/**/*.js src/**/*.html src/**/*.css build/"
   },
